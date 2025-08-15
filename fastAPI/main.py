@@ -61,7 +61,7 @@ except Exception as e:
     easy = None
 
 # Configuration
-MAX_FILE_SIZE = 10 * 1024 * 1024  # 10MB
+MAX_FILE_SIZE = 25 * 1024 * 1024  # 25MB
 ALLOWED_CONTENT_TYPES = [
     "image/webp", "image/jpeg", "image/png", "image/gif", "image/bmp"
 ]

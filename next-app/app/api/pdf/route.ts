@@ -45,11 +45,10 @@ export default async function POST (req: NextRequest) {
 
             const pageResult = await fastApiResponse.json()
             ocrResults.push({ page: i + 1, result: pageResult })
-
-            return NextResponse.json({
-                data: ocrResults
-            })
         }
+        const data = ocrResults
+        return NextResponse.json(data)
+
     } catch (error) {
         console.error(error)
         return NextResponse.json({
